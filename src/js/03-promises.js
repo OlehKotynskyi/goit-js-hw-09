@@ -40,7 +40,7 @@ function onClickForm(e) {
 
       createPromise(i, valueDelay)
          .then(({ position, delay }) => {
-            Notify.success(`Fulfilled promise ${position + 1} in ${delay}ms`, options);
+            Notify.success(`✅ Fulfilled promise ${position + 1} in ${delay}ms`, options);
          })
          .catch(({ position, delay }) => {
             Notify.failure(`❌ Rejected promise ${position + 1} in ${delay}ms`, options);
