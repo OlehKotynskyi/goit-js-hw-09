@@ -66,7 +66,7 @@ function timerStart() {
       if (selectDate - currentDate <= 1000) {
          clearInterval(intervalId);
          btnStart.disabled = true;
-         dateInput.disabled = false;
+         //dateInput.disabled = false;
          Report.info(
             'Вітаю!',
             'Таймер запущено, якщо хочете змінити таймер оберіть дату та час і наисніть Start або перезавантажте сторінку',
